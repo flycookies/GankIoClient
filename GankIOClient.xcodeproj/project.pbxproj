@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F60BB4DBE0DEAD09DB3E688 /* Pods_GankIOClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A935EECF91E4FB41AE80535 /* Pods_GankIOClient.framework */; };
 		C1E5976526BA48B3003EDFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5976426BA48B3003EDFEA /* AppDelegate.swift */; };
 		C1E5976726BA48B3003EDFEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5976626BA48B3003EDFEA /* SceneDelegate.swift */; };
 		C1E5976926BA48B3003EDFEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5976826BA48B3003EDFEA /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A935EECF91E4FB41AE80535 /* Pods_GankIOClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GankIOClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF7555A8E2B80BF3FA2DC6E /* Pods-GankIOClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankIOClient.debug.xcconfig"; path = "Target Support Files/Pods-GankIOClient/Pods-GankIOClient.debug.xcconfig"; sourceTree = "<group>"; };
 		C1E5976126BA48B3003EDFEA /* GankIOClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankIOClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E5976426BA48B3003EDFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1E5976626BA48B3003EDFEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C1E5976D26BA48B5003EDFEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E5977026BA48B5003EDFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1E5977226BA48B5003EDFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5ABD7567A69AA2C37B463B /* Pods-GankIOClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankIOClient.release.xcconfig"; path = "Target Support Files/Pods-GankIOClient/Pods-GankIOClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F60BB4DBE0DEAD09DB3E688 /* Pods_GankIOClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EDE3D003E14D2C7ED83F31A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A935EECF91E4FB41AE80535 /* Pods_GankIOClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1E5975826BA48B3003EDFEA = {
 			isa = PBXGroup;
 			children = (
 				C1E5976326BA48B3003EDFEA /* GankIOClient */,
 				C1E5976226BA48B3003EDFEA /* Products */,
+				DE1B8C63144C89FEBFF98B18 /* Pods */,
+				8EDE3D003E14D2C7ED83F31A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = GankIOClient;
 			sourceTree = "<group>";
 		};
+		DE1B8C63144C89FEBFF98B18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DF7555A8E2B80BF3FA2DC6E /* Pods-GankIOClient.debug.xcconfig */,
+				EB5ABD7567A69AA2C37B463B /* Pods-GankIOClient.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1E5977526BA48B5003EDFEA /* Build configuration list for PBXNativeTarget "GankIOClient" */;
 			buildPhases = (
+				6A78A238663DFDBE9FDD2F91 /* [CP] Check Pods Manifest.lock */,
 				C1E5975D26BA48B3003EDFEA /* Sources */,
 				C1E5975E26BA48B3003EDFEA /* Frameworks */,
 				C1E5975F26BA48B3003EDFEA /* Resources */,
+				202237344499C20DB553B4B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		202237344499C20DB553B4B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GankIOClient/Pods-GankIOClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GankIOClient/Pods-GankIOClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GankIOClient/Pods-GankIOClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A78A238663DFDBE9FDD2F91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GankIOClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C1E5975D26BA48B3003EDFEA /* Sources */ = {
@@ -271,6 +340,7 @@
 		};
 		C1E5977626BA48B5003EDFEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF7555A8E2B80BF3FA2DC6E /* Pods-GankIOClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +361,7 @@
 		};
 		C1E5977726BA48B5003EDFEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB5ABD7567A69AA2C37B463B /* Pods-GankIOClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
